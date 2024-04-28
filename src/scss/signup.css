@@ -1,0 +1,82 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.signup-wrapper .section-1-wrapper {
+  background-image: url("../pictures/blue-wall-background.jpg");
+  background-color: rgba(6, 70, 86, 0.9);
+  background-blend-mode: overlay;
+  max-width: 100%;
+  margin: 5%;
+  padding: 3%;
+}
+.signup-wrapper .section-1-wrapper .text {
+  padding: 0.5%;
+}
+.signup-wrapper .section-1-wrapper .raed {
+  color: white;
+  margin: 35px;
+  padding: 5px;
+  font-size: 65px;
+}
+.signup-wrapper .section-1-wrapper .texts {
+  margin: 23.5% 2%;
+  padding: 0 2%;
+  font-size: 30px;
+  justify-content: center;
+}
+.signup-wrapper .section-1-wrapper .texts .text-1 {
+  padding-bottom: 7%;
+  color: white;
+  font-weight: 400;
+}
+.signup-wrapper .section-1-wrapper .texts .text-2 {
+  padding-bottom: 5%;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+.signup-wrapper .section-2-wrapper {
+  margin: 5%;
+  padding: 0 5%;
+  max-width: 100%;
+}
+.signup-wrapper .section-2-wrapper .signup-text {
+  margin: 20px;
+  padding: auto;
+}
+.signup-wrapper .section-2-wrapper p {
+  font-size: 1.2rem;
+  margin: 5px auto;
+  padding: 5px;
+  font-weight: 400;
+}
+.signup-wrapper .section-2-wrapper input {
+  font-size: 1.5em;
+}
+.signup-wrapper .section-2-wrapper select {
+  font-size: 15px;
+  margin: 5px 5px;
+  width: 50%;
+  padding: 10px 3px;
+}
+.signup-wrapper .section-2-wrapper .register {
+  background-color: #1A8DAD;
+  display: inline-block;
+  color: white;
+  padding: 5% 40%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.signup-wrapper .section-2-wrapper .agreement {
+  width: auto;
+}/*# sourceMappingURL=signup.css.map */

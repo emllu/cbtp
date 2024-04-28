@@ -1,0 +1,88 @@
+/* Styles for item wrapper */
+/* CSS for row container */
+.row-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  /* CSS for item container */
+  .item-container {
+    width: calc(33.33% - 20px); /* Subtracting margin */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+
+
+ /* CSS for item container */
+.item-container {
+    width: 30%; /* Adjust as needed */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    /* CSS for item container */
+
+    width: calc(33.33% - 20px); /* Subtracting margin */
+   background-color:bisque;
+    display: inline-block;
+    vertical-align: top; /* Align top */
+  }
+  .item-poster{
+    border: 1px solid black;
+  }
+  
+
+  /* CSS for item image */
+  .item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* CSS for item name */
+  .item-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* CSS for item price */
+  .item-price {
+    margin-top: 5px;
+  }
+  
+  /* CSS for add to cart button */
+  .add-to-cart-btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* CSS for flex container */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Media query for responsive layout */
+  @media (max-width: 768px) {
+    .item-container {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .item-container {
+      width: 100%;
+    }
+  }
+  

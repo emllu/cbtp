@@ -1,0 +1,87 @@
+/* Basic styling for the Item Manager component */
+.item-manager {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  
+  .item-manager h2 {
+    padding: 10px 0px;
+    text-align: center;
+  }
+  
+  .item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item-form input {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .item-form .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .item-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .item-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .success-message {
+    text-align: center;
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .feedback {
+    text-align: center;
+  }
+  
+  .feedback button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .feedback button:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .item-form input {
+      font-size: 14px;
+    }
+  
+    .item-form .button-container {
+      flex-direction: column;
+    }
+  
+    .item-form button {
+      width: 100%;
+    }
+  }
+  

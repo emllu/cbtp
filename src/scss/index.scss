@@ -1,0 +1,227 @@
+@import './variables'; // Assuming this is the correct path to your variables file
+#li{
+  list-style: none;
+  text-decoration: none; 
+}
+a{
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+height:100%;
+background-color: rgba($primary-color, 1); 
+  
+
+  .section-1-wrapper {
+    // background-image: url('../pictures/8.jpg');
+    // background-color: rgba($primary-color, 1); 
+    background-color:#1d2634 ;// Blue color with 50% opacity
+    background-blend-mode: overlay;
+    width: 100%;
+    height:100%;
+
+    
+    h1{
+      margin: 20px 25px;
+      padding: 10px ;
+      color: #ccc;
+    }
+    .texts {
+      margin: 15% 2%;
+      padding: 6% 9%;
+      font-size: 30px;
+      justify-content: center;
+
+      .text-1 {
+        padding-bottom: 7%;
+        color: white;
+        font-weight: 400;
+      }
+
+      .text-2 {
+        padding-bottom: 7%;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .section-2-wrapper {
+    text-align:left;
+    width: 100%;
+    margin-left:5% ;
+    margin-top: 250px;
+    padding: 25%;
+    //max-width: 100%;
+    form{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 1% 4%;
+    }
+    // label{
+    //   margin: 1% 0;
+     
+    // }
+    input{
+      width: 80%;
+      margin: 10px;
+
+    }
+    select{
+      width: 25%;
+      margin: 10px;
+      font-size: 20px;
+    }
+    .signup-text {
+      margin: auto;
+      padding: auto;
+    }
+    button{
+      width: 50%;
+      margin: 3%;
+    }
+    div{
+      display: flex;
+      #checkbox{
+        width: 18px;
+        margin: 5px;
+      }
+    }
+    
+      #showPassword{
+        width: 18px;
+        margin: 5px;
+      }
+      #toggle{
+        width: 60%;
+        padding: 0 5px ;
+      }
+      // styles.scss
+  input{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease ;
+    padding: 4px;
+    font-size: 20px;
+  }
+
+input:focus {
+  border-color: #007bff; /* Change border color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a shadow effect */
+  outline: none; /* Remove default outline */
+}
+select{
+  border-radius: 5px;
+  border-color:#dddddd ;
+}
+.error{
+  font-size: 0.7rem;
+  color: red;
+
+}
+
+
+
+.button {
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: #ccc;
+    color:$primary-color;
+  }
+}
+
+.register-button {
+  background-color: rgba($primary-color, 1); 
+  background-blend-mode: overlay;
+  color: #fff;
+}
+
+.login-button {
+  background-color: rgba($primary-color, 1); 
+  background-blend-mode: overlay;
+  color: #fff;
+}
+
+    
+
+  
+
+    // input {
+    //   font-size: 1em;
+    //   padding:0;
+    //   border: 1px solid $primary-color;
+    //   border-radius: 5px;
+    //   color: $accent-color;
+    //   transition: border-color 0.3s ease;
+
+    // }
+
+  
+
+    .register {
+      background-color: $primary-color;
+      display: inline-block;
+      color: $text-color;
+      padding: $button-padding;
+      border: none;
+      border-radius: $button-border-radius;
+      
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .agreement {
+      width: auto;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+    .signup-wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 100lvh;
+      
+
+      //height: 100vh;
+      .section-1-wrapper{
+        width: 55%;
+        //height: 100%;
+       
+      }
+      
+      .section-2-wrapper{
+        margin:1.5% 0;
+        padding: 0 5%;
+        width: 45%;
+       justify-content: center;
+       #checkbox{
+        display: inline;
+       }
+
+
+        
+      }
+
+      }
+      
+}
+
+  

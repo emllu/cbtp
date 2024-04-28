@@ -1,0 +1,73 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the modal */
+    z-index: 1000; /* High z-index to ensure it's on top */
+  }
+  
+  .modal-content {
+    background: white; /* White background */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    width: 300px; /* Smaller width for compact size */
+  }
+  
+  .error-message {
+    color: red; /* Error message in red */
+    margin-top: 10px; /* Space between input and error message */
+  }
+  
+  #submit-btn, #close-btn {
+    background-color: #001f3f; /* Blue-black color */
+    color:black; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer; /* Change cursor to indicate clickable */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  #submit-btn:hover, #close-btn:hover {
+    background-color: #005f7f; /* Lighter blue on hover */
+  }
+  
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;  
+    border-radius: 5px; 
+}
+  .error-message {
+    color: red; 
+    margin-top: 10px; 
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between; 
+  }
+  #submit-button, #close-button {
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer;  
+  }
+  
+  #submit-button:hover, #close-button:hover {
+    background-color: #0056b3; 
+  }
+  #text1{
+    color:#007bff
+  }

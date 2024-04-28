@@ -1,0 +1,258 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  width: 100%;
+  margin:0px auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e8ebef;
+}
+#demo{
+  /* background-color: goldenrod ; */
+  background-color: #1d2634;
+}
+/* Header Styling */
+.header {
+  height: 80px;
+  width:100%; /* Adjust this width if necessary */
+  /* background-color: goldenrod; */
+  background-color: #1d2634;
+  border-radius: 3px;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+
+.fa-solid {
+  color: goldenrod;
+}
+
+.cart p {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  /* background-color: goldenrod; */
+  background-color: #1d2634;
+  color: white;
+}
+
+/* Container and Product Grid */
+.container {
+  display: flex;
+  width: 100%; /* Adjust this width to ensure consistent layout */
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust as needed */
+  grid-gap: 20px; /* Space between products */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 40%; /* Adjust for correct sidebar width */
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  margin-left: 20px; /* Space between grid and sidebar */
+}
+
+.head {
+  /* background-color: goldenrod; */
+  background-color: #1d2634;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+}
+
+/* Product Box */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #1d2634;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+}
+
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+}
+
+/* Buttons and Hover Effects */
+button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  /* background-color: goldenrod; */
+  background-color: #1d2634;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #333; /* Change hover color */
+}
+
+/* Cart Item Styling */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+  color: #333; /* Trash icon hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-grid {
+      grid-template-columns: 1fr; /* Adjust for smaller screens */
+  }
+
+  .sidebar {
+      width: 100%; /* Full width in responsive view */
+  }
+}
+
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-grid {
+      grid-template-columns: 1fr; /* Adjust for smaller screens */
+  /* } */
+
+  /* .sidebar {
+      width: 100%; /* Full width in responsive view */
+  /* }} */
+
+
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    #root {
+      width: 100%;
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+   
